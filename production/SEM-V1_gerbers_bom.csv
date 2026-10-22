@@ -1,0 +1,8 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+F1,Fuseholder_Cylinder-5x20mm_Schurter_FPG4_Vertical_Closed,1,Fuse,
+"J1, J7",PinHeader_1x04_P2.54mm_Vertical,2,Conn_01x04_Pin,
+"J2, J3, J8","TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",3,Screw_Terminal_01x02,
+"J4, J5",PinHeader_1x15_P2.54mm_Vertical,2,Conn_01x15,
+J6,PinHeader_1x03_P2.54mm_Vertical,1,Conn_01x03_Pin,
+RV1,RV_Disc_D7mm_W3.4mm_P5mm,1,Varistor,
+U1,Converter_ACDC_Hi-Link_HLK-PMxx,1,HLK-PM01,

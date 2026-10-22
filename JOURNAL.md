@@ -20,3 +20,13 @@ Moved over to the PCB editor today with the camera rolling for a build timelapse
 ![PCB Layout](images/pcb-layout.png)
 
 **Total time spent: 2.5 hours**
+
+# October 22: Routing, ground pour, custom silkscreen, and Gerber export
+
+Finished routing all the AC and DC traces today, keeping power tracks thick and pouring the ground plane on the DC section while leaving the AC side completely isolated. I Ran DRC and passed with a clean 0-error bill of health. 
+Added my custom signature ("Built by Debug Ayo :)") and graphic to the silkscreen, checked everything in the 3D viewer, and generated the final manufacturing files (`production/SEM-V1_gerbers.zip`). 
+So i am submitting now waiting for feedback :)
+
+![3D PCB Render]images/pcb_3d.png)
+
+**Total time spent: 4.0 hours**
