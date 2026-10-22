@@ -34,7 +34,7 @@ So, I got tired of manually toggling between grid power, generators, and inverte
 ![PCB Layout](images/pcb-layout.png)
 
 ### 3D Board Render
-![3D PCB Render](images/images/pcb_3d.png)
+![3D PCB Render](images/pcb_3d.png)
 
 ## Repo Structure
 - `Smart_Meter_PoC.kicad_sch` — KiCad schematic file.
