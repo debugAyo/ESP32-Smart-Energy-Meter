@@ -27,6 +27,6 @@ Finished routing all the AC and DC traces today, keeping power tracks thick and 
 Added my custom signature ("Built by Debug Ayo :)") and graphic to the silkscreen, checked everything in the 3D viewer, and generated the final manufacturing files (`production/SEM-V1_gerbers.zip`). 
 So i am submitting now waiting for feedback :)
 
-![3D PCB Render]images/pcb_3d.png)
+![3D PCB Render](images/pcb_3d.png)
 
 **Total time spent: 4.0 hours**
