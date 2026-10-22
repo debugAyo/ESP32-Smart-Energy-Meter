@@ -9,13 +9,36 @@ So, I got tired of manually toggling between grid power, generators, and inverte
 - **Maintains boundaries:** Designed the double-sided KiCad layout with a strict physical isolation gap keeping the spicy 220V AC mains completely away from the low-voltage DC logic.
 
 ## Stack & Hardware
-- **Brain:** ESP32 DevKit V1 (Wi-Fi telemetry & logic)
+- **Brain:** ESP32 DevKit V1 (plugs into carrier headers)
 - **CAD & Layout:** KiCad
 - **Core Parts:** HLK-PM01, PZEM-004T, 5V relay module, Phoenix screw terminals
-- **Code:** C++ (Arduino / PlatformIO)
+
+## Bill of Materials (BOM)
+
+| Component | Description | Quantity |
+| :--- | :--- | :--- |
+| **ESP32 DevKit V1** | Microcontroller development board (plugs into headers `J4`/`J5`) | 1 |
+| **PZEM-004T v3.0** | AC energy monitor sensor module | 1 |
+| **HLK-PM01** | Isolated 230V AC to 5V DC power supply module | 1 |
+| **5V Relay Module** | Opto-isolated load control switch | 1 |
+| **Screw Terminals** | 2-pin and 3-pin terminals for AC/DC wiring | 3 |
+| **Fuse & Holder** | AC input overcurrent protection (`F1`) | 1 |
+| **Varistor (MOV)** | Voltage surge protection (`RV1`) | 1 |
+
+## Visuals & Design
+
+### Schematic Capture
+![Schematic Design](images/schematic-v1.png)
+
+### PCB Layout
+![PCB Layout](images/pcb-layout.png)
+
+### 3D Board Render
+![3D PCB Render](images/images/pcb_3d.png)
 
 ## Repo Structure
-- `/schematics` - KiCad schematic files.
-- `/pcb` - Board layout files and Gerber exports.
-- `/firmware` - ESP32 sensor logic and actuation code.
-- `JOURNAL.md` - My actual build log and workflow notes.
+- `Smart_Meter_PoC.kicad_sch` — KiCad schematic file.
+- `Smart_Meter_PoC.kicad_pcb` — KiCad PCB layout file.
+- `production/` — Generated Gerbers (`SEM-V1_gerbers.zip`), BOM, and position files.
+- `images/` — Visual assets and screenshots.
+- `JOURNAL.md` — Build log and workflow notes.
