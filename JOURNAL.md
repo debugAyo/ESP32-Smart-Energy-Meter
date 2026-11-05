@@ -31,10 +31,14 @@ So i am submitting now waiting for feedback :)
 
 **Total time spent: 4.0 hours**
 
-# November 5: Finalized BOM, Indicator LED, and Firmware Logic
+# November 5: Added indicator LED, sorted LCSC links, and wrote test code
 
-Finalized the Smart Meter layout by verifying the clearance around the high-voltage HLK-PM01 traces and fuse block. Integrated a THT LED indicator and current-limiting resistor to show live telemetry heartbeat. Exported the final Bill of Materials with accurate LCSC part numbers for reproduction. Wrote the initial C++ firmware using the PZEM004Tv30 library to handle UART sensor reads and automatic relay cutoff for over-power protection.
+The reviewer asked for basic blink firmware and direct BOM links before approving the grant. 
 
-![3D PCB Render](images/pcb_3d_v1.png)
+Instead of just writing dummy code for nothing, I hopped back into KiCad and added a green 3mm LED and a 1k resistor onto GPIO8 so there's a visible status light on the board. Used through-hole parts here so I don't have to stress about soldering microscopic SMD pads with a normal iron. Had to nudge a few traces around the HLK-PM01 side to keep clean clearance away from the AC mains line, then exported a fresh 3D render.
+
+Spent the rest of the time tracking down the exact LCSC part numbers, checking minimum order quantities, and figuring out DHL shipping to Nigeria so the budget request matches reality. Wrapped up by writing a no-nonsense Arduino test sketch to toggle the LED and print to serial.
+
+![Updated 3D Render](images/pcb_3d_v1.png)
 
 **Total time spent: 4 hours**
