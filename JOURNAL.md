@@ -30,3 +30,11 @@ So i am submitting now waiting for feedback :)
 ![3D PCB Render](images/pcb_3d.png)
 
 **Total time spent: 4.0 hours**
+
+# November 5: Finalized BOM, Indicator LED, and Firmware Logic
+
+Finalized the Smart Meter layout by verifying the clearance around the high-voltage HLK-PM01 traces and fuse block. Integrated a THT LED indicator and current-limiting resistor to show live telemetry heartbeat. Exported the final Bill of Materials with accurate LCSC part numbers for reproduction. Wrote the initial C++ firmware using the PZEM004Tv30 library to handle UART sensor reads and automatic relay cutoff for over-power protection.
+
+![3D PCB Render](images/pcb_3d_v1.png)
+
+**Total time spent: 4 hours**
